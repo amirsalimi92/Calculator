@@ -1,0 +1,162 @@
+@font-face {
+  font-family: eaSports;
+  src: url("EASPORTS.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "eaSports";
+}
+
+#main {
+  background-color: #262626;
+  max-width: 393px !important;
+  max-height: 844px;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 38.5pt;
+  color: white;
+  overflow: hidden;
+  padding-left: 1%;
+}
+
+#head {
+  display: flex;
+  height: 10%;
+}
+
+#back {
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back > div {
+  font-weight: bolder;
+  font-size: 2em;
+  color: white;
+}
+
+#freeSpace {
+  flex: 3;
+}
+
+#theme {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme > a {
+  font-size: 0.75em;
+}
+
+#screen {
+  height: 25%;
+}
+
+#recent {
+  overflow: hidden;
+  color: rgb(192, 192, 192);
+  font-size: 1.5em;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result {
+  height: 70%;
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons {
+  height: 65%;
+  display: flex;
+  border-radius: 0 0 100% 0;
+}
+
+#left {
+  flex: 6;
+  height: 100%;
+}
+
+#right {
+  flex: 3;
+  height: 100%;
+  background-color: black;
+  border-radius: 25vh 0 0 0;
+}
+
+#sizeContent {
+  padding-right: 15%;
+  padding-left: 15%;
+  height: 100%;
+}
+
+#sizeContent > div {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#sizeContent > #rowDigitLast {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10%;
+}
+
+#sizeContent > div > div {
+  padding: 5%;
+  padding-top: 7.5%;
+}
+
+#rowDigit {
+  height: 14%;
+  display: flex;
+  flex-direction: row;
+}
+
+#rowDigitFirst {
+  height: 29%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#rowDigitLast {
+  height: 29%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+#digit {
+  flex: 1;
+  padding: 2.5%;
+}
+
+#dokme {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #262626;
+  box-shadow: 0 0 15px black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equal {
+  background-color: orange !important;
+}
