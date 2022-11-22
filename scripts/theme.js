@@ -2,7 +2,7 @@
 let main = document.querySelector("#main");
 let dokme = document.querySelectorAll(".dokme");
 let right = document.querySelector("#right");
-let recent = document.querySelector("#recent");
+let recent = document.querySelector("#recentScreen");
 let equal = document.querySelector("#equal");
 let theme = document.querySelector("#theme");
 

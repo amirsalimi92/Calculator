@@ -12,8 +12,10 @@ body {
 #main {
   background-color: #262626;
   max-width: 393px !important;
-  max-height: 844px;
+  height: 670px;
+  max-height: 900px;
   height: 100vh;
+
   margin-right: auto;
   margin-left: auto;
   border-radius: 38.5pt;
@@ -25,7 +27,7 @@ body {
 
 #head {
   display: flex;
-  height: 10%;
+  height: 7.5%;
 }
 
 #back {
@@ -56,10 +58,10 @@ body {
 }
 
 #screen {
-  height: 25%;
+  height: 20%;
 }
 
-#recent {
+#recentScreen {
   overflow: hidden;
   color: rgb(192, 192, 192);
   font-size: 1.5em;
@@ -79,7 +81,7 @@ body {
 }
 
 #buttons {
-  height: 65%;
+  height: 72.5%;
   display: flex;
   border-radius: 0 0 100% 0;
 }
@@ -115,7 +117,6 @@ body {
 #sizeContent > #rowDigitLast {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 10%;
 }
 
 #sizeContent > div > div {
@@ -124,14 +125,14 @@ body {
 }
 
 #rowDigit {
-  height: 14%;
+  height: 16%;
   display: flex;
   flex-direction: row;
   margin-top: 2%;
 }
 
 #rowDigitFirst {
-  height: 29%;
+  height: 28%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -139,12 +140,11 @@ body {
 }
 
 #rowDigitLast {
-  height: 29%;
+  height: 24%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 5%;
 }
 
 #digit {

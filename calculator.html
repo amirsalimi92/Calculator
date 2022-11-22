@@ -21,64 +21,64 @@
             </div>
         </div>
         <div id="screen">
-            <div id="recent"><span>1+2+3</span></div>
-            <div id="result"><span>6</span></div>
+            <div recentScreen id="recentScreen"></div>
+            <div result id="result"></div>
         </div>
         <div id="buttons">
             <div id="left">
                 <div id="rowDigitFirst">
                     <div id="digit">
-                        <div id="AC" class="dokme">AC</div>
+                        <div data-all-clear class="dokme">AC</div>
+                    </div>
+                    <div id="digit">
+                        <div data-delete class="dokme">Del</div>
                     </div>
                     <div id="digit">
                         <div id="PM" class="dokme">+/-</div>
                     </div>
+                </div>
+                <div id="rowDigit">
                     <div id="digit">
-                        <div id="PC" class="dokme">%</div>
+                        <div data-number class="dokme">7</div>
+                    </div>
+                    <div id="digit">
+                        <div data-number class="dokme">8</div>
+                    </div>
+                    <div id="digit">
+                        <div data-number class="dokme">9</div>
                     </div>
                 </div>
                 <div id="rowDigit">
                     <div id="digit">
-                        <div id="7" class="dokme">7</div>
+                        <div data-number class="dokme">4</div>
                     </div>
                     <div id="digit">
-                        <div id="8" class="dokme">8</div>
+                        <div data-number class="dokme">5</div>
                     </div>
                     <div id="digit">
-                        <div id="9" class="dokme">9</div>
-                    </div>
-                </div>
-                <div id="rowDigit">
-                    <div id="digit">
-                        <div id="4" class="dokme">4</div>
-                    </div>
-                    <div id="digit">
-                        <div id="5" class="dokme">5</div>
-                    </div>
-                    <div id="digit">
-                        <div id="6" class="dokme">6</div>
+                        <div data-number class="dokme">6</div>
                     </div>
                 </div>
                 <div id="rowDigit">
                     <div id="digit">
-                        <div id="1" class="dokme">1</div>
+                        <div data-number class="dokme">1</div>
                     </div>
                     <div id="digit">
-                        <div id="2" class="dokme">2</div>
+                        <div data-number class="dokme">2</div>
                     </div>
                     <div id="digit">
-                        <div id="3" class="dokme">3</div>
+                        <div data-number class="dokme">3</div>
                     </div>
                 </div>
                 <div id="rowDigitLast">
                     <div id="digit">
-                        <div id="0" class="dokme">0</div>
+                        <div data-number class="dokme">0</div>
                     </div>
                     <div id="digit">
-                        <div id="00" class="dokme">00</div>
+                        <div data-number class="dokme">00</div>
                     </div>
                     <div id="digit">
-                        <div id="dot" class="dokme">.</div>
+                        <div data-number class="dokme">.</div>
                     </div>
                 </div>
             </div>
@@ -86,27 +86,27 @@
                 <div id="sizeContent">
                     <div id="rowDigitFirst">
                         <div id="digit">
-                            <div id="slash" class="dokme">/</div>
+                            <div data-operation class="dokme">÷</div>
                         </div>
                     </div>
                     <div id="rowDigit">
                         <div id="digit">
-                            <div id="mul" class="dokme">x</div>
+                            <div data-operation class="dokme">*</div>
                         </div>
                     </div>
                     <div id="rowDigit">
                         <div id="digit">
-                            <div id="min" class="dokme">-</div>
+                            <div data-operation class="dokme">-</div>
                         </div>
                     </div>
                     <div id="rowDigit">
                         <div id="digit">
-                            <div id="plus" class="dokme">+</div>
+                            <div data-operation class="dokme">+</div>
                         </div>
                     </div>
                     <div id="rowDigitLast">
                         <div id="digit">
-                            <div id="equal" class="dokme">=</div>
+                            <div data-equal id="equal" class="dokme">=</div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,9 @@
     </div>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/calc.js"></script>
+    <script src="scripts/theme.js"></script>
+
 </body>
 
 </html>
