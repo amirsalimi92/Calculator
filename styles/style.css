@@ -13,7 +13,6 @@ body {
 
   margin-right: auto;
   margin-left: auto;
-  border-radius: 38.5pt;
   color: white;
   overflow: hidden;
   padding-left: 1%;
@@ -27,6 +26,10 @@ body {
 
 #back {
   flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 20%;
 }
 
 #github {
@@ -44,6 +47,8 @@ body {
 
 #freeSpace {
   flex: 3;
+  display: flex;
+  max-width: 60%;
 }
 
 #theme {
