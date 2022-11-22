@@ -3,7 +3,8 @@ const operationButtons = document.querySelectorAll("[data-operation]");
 const equalButton = document.querySelector("[data-equal]");
 const deleteButton = document.querySelector("[data-delete]");
 const allClear = document.querySelector("[data-all-clear]");
-const recentScreen = document.querySelector("[recent]");
+const oppo = document.querySelector("#PM");
+const recentScreen = document.querySelector("[recentScreen]");
 const result = document.querySelector("[result]");
 
 class Calculator {
@@ -62,6 +63,15 @@ class Calculator {
     this.currentOperand = computation;
     this.operation = undefined;
     this.previousOperand = "";
+  }
+
+  oppos() {
+    let current = parseFloat(this.currentOperand);
+
+    if (isNaN(current)) return;
+    current = current * -1;
+    console.log(current);
+    this.currentOperand = current;
   }
 
   getDisplayNumber(number) {
@@ -123,6 +133,12 @@ allClear.addEventListener("click", (button) => {
 
 deleteButton.addEventListener("click", (button) => {
   calculator.delete();
+  calculator.updateDisplay();
+});
+
+oppo.addEventListener("click", (button) => {
+  console.log("hello");
+  calculator.oppos();
   calculator.updateDisplay();
 });
 
